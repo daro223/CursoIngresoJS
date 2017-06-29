@@ -4,6 +4,9 @@
 */
 function Mostar()
 {
-	
+var nombre = prompt("Por favor ingresa tu nombre", "Natalia Natalia");
+
+document.getElementById('elNombre').value=nombre;
+
 }
 
