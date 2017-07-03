@@ -4,65 +4,69 @@ mostar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-var a;
-var b;
+var numUno;
+var numDos;
+var resultado;
 
-a=document.getElementById('numeroUno').value;
-b=document.getElementById('numeroDos').value;
+numUno=document.getElementById('numeroUno').value;
+numDos=document.getElementById('numeroDos').value;
 
-a=parseInt(a)
-b=parseInt(b)
+numUno=parseInt(numUno);
+numDos=parseInt(numDos);
 
-var suma = a+b;
+resultado=numUno+numDos;
 
-alert("el resultado de la suma es: "+suma);
+alert(resultado);
 }
 
 function restar()
 {
-var a;
-var b;
+var numUno;
+var numDos;
+var resultado;
 
-a=document.getElementById('numeroUno').value;
-b=document.getElementById('numeroDos').value;
+numUno=document.getElementById('numeroUno').value;
+numDos=document.getElementById('numeroDos').value;
 
-a=parseInt(a)
-b=parseInt(b)
+numUno=parseInt(numUno);
+numDos=parseInt(numDos);
 
-var resta = a-b;
+resultado=numUno-numDos;
 
-alert("el resultado de la resta es: "+resta);;
+alert(resultado);
 }
 
 function multiplicar()
 { 
-var a;
-var b;
+var numUno;
+var numDos;
+var resultado;
 
-a=document.getElementById('numeroUno').value;
-b=document.getElementById('numeroDos').value;
+numUno=document.getElementById('numeroUno').value;
+numDos=document.getElementById('numeroDos').value;
 
-a=parseInt(a)
-b=parseInt(b)
+numUno=parseInt(numUno);
+numDos=parseInt(numDos);
 
-var multiplicar = a*b;
+resultado=numUno*numDos;
 
-alert("el resultado de la multiplicación es: "+multiplicar);;
+alert(resultado);
 }
 
 function dividir()
 {
-var a;
-var b;
+var numUno;
+var numDos;
+var resultado;
 
-a=document.getElementById('numeroUno').value;
-b=document.getElementById('numeroDos').value;
+numUno=document.getElementById('numeroUno').value;
+numDos=document.getElementById('numeroDos').value;
 
-a=parseInt(a)
-b=parseInt(b)
+numUno=parseInt(numUno);
+numDos=parseInt(numDos);
 
-var dividir = a/b;
+resultado=numUno/numDos;
 
-alert("el resultado de la divisón es: "+dividir);;
+alert(resultado);
 }
 

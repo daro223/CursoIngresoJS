@@ -2,6 +2,8 @@
 y luego mostrarlo por 'alert' al presionar el botón  'MOSTRAR'*/
 function Mostar()
 {
-var nombre = prompt("Por favor ingresa tu nombre", "Natalia Natalia");
-alert("su nombre es: "+nombre)}
+var nombre;
+nombre=prompt("ingrese su nombre");
+alert(nombre);
+}
 
