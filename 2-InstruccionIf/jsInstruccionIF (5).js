@@ -1,13 +1,11 @@
 function Mostrar()
 {
 //tomo la edad  
-if(document.getElementById('edad').value>17)
-	{alert("No es adolecente");
-}
-else if(document.getElementById('edad').value<13)
-	{alert("No es adolecente");
-}
-else{
-}
+var edad;
+edad=document.getElementById('edad').value;
 
+if(!(edad>12&&edad<18))
+	{
+		alert("NO es adolecente");
+	}
 }//FIN DE LA FUNCIÓN
