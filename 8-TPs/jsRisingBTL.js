@@ -18,13 +18,23 @@ function ComenzarIngreso ()
 
 	//limita la edad entre 18 y 90, pero acepta negativos
 	edad=prompt("Ingrese una edad entre 18 y 90 años.");
-	while((edad>90||edad<18)==(/^([0-9])*$/.test(edad)))
+	/*while((edad>90||edad<18)==(/^([0-9])*$/.test(edad)))
 	{
 		alert("El valor '" + edad + "' no es valido.");
 		edad=prompt("Ingrese una edad entre 18 y 90 años.");
 	}
 	validacion=document.getElementById('Edad').value=edad;		
-	
+	*/
+
+	while(!(edad>17 && edad<91))
+	{
+		alert("El valor '" + edad + "' no es valido.");
+		edad=prompt("Ingrese una edad entre 18 y 90 años.");
+	}
+	document.getElementById('Edad').value=edad;
+
+
+
 	sexo=prompt("Ingrese 'f' para Femenino ó 'm' para masculino.")
 	while(sexo!="f"&&sexo!="m")
 	{
@@ -46,26 +56,34 @@ function ComenzarIngreso ()
 		2-para casados, 
 		3-para divorciados y 
 		4-para viudos */
-	/*while((estado<1||estado>4)==(/^([0-9])*$/.test(estado)))
+	while(!(estado>0&&estado<5))
 	{
 		alert("Número incorrecto");
 		estado=prompt("Ingrese \n1-para soltero/a,\n2-para casado/a, \n3-para divorciado/a, \n4-para viudo/a.");
-	}*/
+	}
 	switch(estado)
 	{
-		case 1:
+		case "1":
 		estado="Soltero/a";
-		break;
-		case 2:
+		break; 
+		case "2":
 		estado="casado/a";
 		break;
-		case 3:
+		case "3":
 		estado="divorciado/a";
 		break;
-		case 4:
+		case "4":
 		estado="viudo/a";
 		break;
 	}
 	document.getElementById('EstadoCivil').value=estado;
-	alert(estado);
+	
+	sueldo=prompt("Ingrese sueldo bruto no menor a 8000");
+	while(sueldo<8000)
+		{
+			alert("El sueldo no puede ser inferior a 8000");
+			sueldo=prompt("Ingrese sueldo bruto no menor a 8000");
+		}
+	document.getElementById('Sueldo').value=sueldo;
+
 }
